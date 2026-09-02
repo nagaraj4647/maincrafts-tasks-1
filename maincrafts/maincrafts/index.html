@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>MainCrafts — Build Smarter with MainCrafts</title>
+<meta name="description" content="MainCrafts builds fast, responsive, scalable web products with modern, user-friendly design.">
+
+<!-- Google Fonts -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+
+<!-- FontAwesome -->
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<a class="skip-link" href="#main">Skip to content</a>
+
+<!-- ================= HEADER ================= -->
+<header class="site-header" id="home">
+  <div class="header-inner">
+
+    <a href="#home" class="brand" aria-label="MainCrafts home">
+      <span class="brand-mark" aria-hidden="true">
+        <span class="peak peak--l"></span>
+        <span class="peak peak--r"></span>
+      </span>
+      <span class="brand-name">MainCrafts</span>
+    </a>
+
+    <button class="nav-toggle" id="navToggle" aria-expanded="false" aria-controls="primaryNav" aria-label="Toggle navigation menu">
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+      <span class="nav-toggle-bar"></span>
+    </button>
+
+    <nav class="primary-nav" id="primaryNav" aria-label="Primary">
+      <ul>
+        <li><a href="#home" class="nav-link">Home</a></li>
+        <li><a href="#features" class="nav-link">Features</a></li>
+        <li class="has-dropdown">
+          <button class="nav-link dropdown-trigger" id="servicesTrigger" aria-haspopup="true" aria-expanded="false" aria-controls="servicesMenu">
+            Services
+            <svg class="chevron" width="10" height="6" viewBox="0 0 10 6" aria-hidden="true"><path d="M1 1l4 4 4-4" stroke="currentColor" stroke-width="1.6" fill="none" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          </button>
+          <ul class="dropdown-menu" id="servicesMenu" role="menu" aria-label="Services">
+            <li role="none"><a role="menuitem" href="#contact"><i class="fa-solid fa-code" aria-hidden="true"></i>Web Development</a></li>
+            <li role="none"><a role="menuitem" href="#contact"><i class="fa-solid fa-pen-ruler" aria-hidden="true"></i>UI/UX Design</a></li>
+            <li role="none"><a role="menuitem" href="#contact"><i class="fa-solid fa-layer-group" aria-hidden="true"></i>Full Stack Development</a></li>
+            <li role="none"><a role="menuitem" href="#contact"><i class="fa-solid fa-cloud-arrow-up" aria-hidden="true"></i>Digital Solutions</a></li>
+          </ul>
+        </li>
+        <li><a href="#contact" class="nav-link">Contact</a></li>
+      </ul>
+    </nav>
+
+  </div>
+</header>
+
+<main id="main">
+
+  <!-- ================= HERO ================= -->
+  <section class="hero">
+    <div class="hero-inner">
+      <div class="hero-copy">
+        <h1 class="hero-heading">Build Smarter with MainCrafts</h1>
+        <p class="hero-tagline">We design and engineer web products — from first sketch to production — combining clean code, thoughtful interfaces, and infrastructure that holds up as you grow.</p>
+        <a href="#features" class="btn btn-primary">
+          <span>Get Started</span>
+        </a>
+      </div>
+
+      <div class="hero-graphic" aria-hidden="true">
+        <div class="peak-cluster">
+          <span class="cluster-peak p1"></span>
+          <span class="cluster-peak p2"></span>
+          <span class="cluster-peak p3"></span>
+        </div>
+        <div class="grid-plane"></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FEATURES ================= -->
+  <section class="features" id="features">
+    <div class="features-inner">
+      <h2 class="section-heading">What you get, by default</h2>
+
+      <div class="feature-grid">
+
+        <article class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-bolt" aria-hidden="true"></i></div>
+          <h3>Fast</h3>
+          <p>Every build is optimized for speed and performance, so pages load quickly and interactions feel instant.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-mobile-screen" aria-hidden="true"></i></div>
+          <h3>Responsive</h3>
+          <p>Interfaces are built to work smoothly across desktop, tablet, and mobile from the very first commit.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-diagram-project" aria-hidden="true"></i></div>
+          <h3>Scalable</h3>
+          <p>Architecture that grows with your business and your users, without a rebuild every time you succeed.</p>
+        </article>
+
+        <article class="feature-card">
+          <div class="feature-icon"><i class="fa-solid fa-wand-magic-sparkles" aria-hidden="true"></i></div>
+          <h3>Modern Design</h3>
+          <p>Clean, user-friendly interfaces shaped by real usage, not just trends — built to feel effortless.</p>
+        </article>
+
+      </div>
+    </div>
+  </section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer" id="contact">
+  <div class="footer-inner">
+
+    <div class="footer-brand">
+      <a href="#home" class="brand brand--footer" aria-label="MainCrafts home">
+        <span class="brand-mark" aria-hidden="true">
+          <span class="peak peak--l"></span>
+          <span class="peak peak--r"></span>
+        </span>
+        <span class="brand-name">MainCrafts</span>
+      </a>
+      <p>Web, product, and full stack development for teams who want to move fast without cutting corners.</p>
+    </div>
+
+    <nav class="footer-links" aria-label="Legal">
+      <a href="#">Privacy Policy</a>
+      <a href="#">Terms</a>
+      <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="footer-contact">
+      <p><i class="fa-solid fa-envelope" aria-hidden="true"></i> hr@maincrafts.com</p>
+      <p><i class="fa-solid fa-globe" aria-hidden="true"></i> www.maincrafts.com</p>
+    </div>
+
+  </div>
+
+  <div class="footer-bottom">
+    <p>&copy; 2025 MainCrafts. All Rights Reserved.</p>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
